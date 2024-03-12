@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            class Produtos{
+                nome;
+                preco;
+                quantidade;
+                constructor(nome, preco, quantidade){
+                    this.nome = nome;
+                    this.preco = preco;
+                    this.quantidade = quantidade;
+                }
+                calcularTotal(){
+                    return(this.preco* this.quantidade).toFixed(2)
+                }
+            }
+            let produtos1 = new Produtos("trembolona", 30, 60)
+            console.log(produtos1)
+            console.log(`o Total é: ${(produtos1.calcularTotal())}`);
+        </script>
+</body>
+</html>

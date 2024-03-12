@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            class Filme{
+                titulo;
+                genero;
+                duracao;
+                constructor(titulo,genero, duracao){
+                    this.titulo = titulo;
+                    this.genero =genero;
+                    this.duracao = duracao;
+                }
+                informacoesFilme(){
+                    return (this.duracao + this.modelo)
+                }
+            }
+            let filme1 = new Filme(" a volta dos que nao foram ", " impossivel saber ", "0s" )
+            console.log(filme1)
+            console.log(`o Filme é: ${(filme1.informacoesFilme())}`);
+        </script>
+</body>
+</html>

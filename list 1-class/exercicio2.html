@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            class Casa{
+                endereco;
+                quartos;
+                peso;
+                constructor(endereco, quartos, area){
+                    this.endereco = endereco;
+                    this.quartos = quartos;
+                    this.area = area;
+                }
+                informacoesCasa(){
+                    return(this.endereco + this.quartos + this.area)
+                }
+            }
+            let casa1 = new Casa("rua de nao sei ", "numeros de quartos: 12 ", " area: 1000")
+            console.log(casa1)
+            console.log(`o Casa é: ${(casa1.informacoesCasa())}`);
+        </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            class Empresa{
+                nome;
+                receitaanual;
+                despensaanual;
+                constructor(nome, receitaanual, despensaanual,){
+                    this.nome = nome;
+                    this.receitaanual = receitaanual;
+                    this.despensaanual = despensaanual;
+                }
+                calcularLucroAnual(){
+                    return (this.despensaanual - this.receitaanual).toFixed(2)
+                }
+                exibirRelatorio(){
+                    return( this.nome + this.despensaanual + this.receitaanual)
+                }
+            }
+            let Empresa1 = new Empresa("Valores", 1000 ,2000)
+            console.log(Empresa1)
+            console.log(`o Lucro Anual é: ${(Empresa1.calcularLucroAnual())}`);
+
+            let Empresa2 = new Empresa(" Empresa: bitoneira  " , " Receita Anual 2000 " , " Despensa Anual: 1000",)
+            console.log(Empresa2)
+            console.log(`o Relatorio é: ${(Empresa2.exibirRelatorio())}`);
+        </script>
+</body>
+</html>
